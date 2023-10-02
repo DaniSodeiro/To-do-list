@@ -34,3 +34,29 @@ const Todo = ({ todo, completeTodo, editTodo, removeTodo }) => {
       <div>
         {isEditing ? (
           <>
+            <button className="save" onClick={handleSave}>
+              Salvar
+            </button>
+            <button className="cancel" onClick={() => setIsEditing(false)}>
+              Cancelar
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="complete" onClick={() => completeTodo(todo.id)}>
+              Concluido
+            </button>
+            <button className="edit" onClick={handleEdit}>
+              Editar
+            </button>
+            <button className="remove" onClick={() => removeTodo(todo.id)}>
+              Excluir
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Todo;
