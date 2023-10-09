@@ -1,13 +1,10 @@
 import { useState } from "react";
 
-import Todo from "./components/Todo";
-
-import Search from "./components/Search";
-
-import Filter from "./components/Filter";
-
-import "./App.css";
 import TodoForm from "./components/TodoForm";
+import Todo from "./components/Todo";
+import Search from "./components/Search";
+import Filter from "./components/Filter";
+import "./App.css";
 
 const App = () => {
   const [todos, setTodos] = useState([
@@ -33,8 +30,8 @@ const App = () => {
 
   const [filter, setFilter] = useState("All");
   const [sort, setSort] = useState("Asc");
-
   const [search, setSearch] = useState("");
+  const [value, setValue] = useState("");
 
   const addTodo = (text, category) => {
     const newTodos = [
@@ -75,8 +72,9 @@ const App = () => {
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
-      <Search search={search} setSearch={setSearch} />
-      <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
+      <div className="create-todo-section">
+        <TodoForm addTodo={addTodo} />
+      </div>
       <div className="todo-list">
         {todos
           .filter((todo) =>
@@ -101,11 +99,14 @@ const App = () => {
               todo={todo}
               completeTodo={completeTodo}
               removeTodo={removeTodo}
-              editTodo={editTodo} // Adicione esta linha
+              editTodo={editTodo}
             />
           ))}
       </div>
-      <TodoForm addTodo={addTodo} />
+      <div className="search-filter-section">
+        <Search search={search} setSearch={setSearch} />
+        <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
+      </div>
     </div>
   );
 };
