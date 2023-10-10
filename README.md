@@ -14,8 +14,9 @@ Este é um aplicativo de lista de tarefas (to-do list) construído com Vite e Re
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
-- [Node.js](https://nodejs.org/)
+- [NodeJS](https://nodejs.org/pt-br/download)
 - [npm](https://vitejs.dev/guide/)
+- [React](https://www.npmjs.com/package/react/v/18.2.0)
 
 ## Instalação
 
@@ -26,6 +27,8 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 ```bash
 git clone https://github.com/https://github.com/DaniSodeiro/To-do-list
 ```
+
+###### com SSH
 
 ```bash
 git clone git@github.com:DaniSodeiro/To-do-list.git
