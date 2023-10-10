@@ -1,3 +1,4 @@
+/* Configurações gerais para o corpo da página */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -8,6 +9,7 @@ body {
   background-position: center;
 }
 
+/* Estiliza o contêiner principal da aplicação */
 .app {
   max-width: 500px;
   margin: 0 auto;
@@ -16,28 +18,34 @@ body {
   background-color: #03a64a;
 }
 
+/* Estilos para os cabeçalhos h1 */
 h1 {
   text-align: center;
 }
 
+/* Estilos para os cabeçalhos h2 */
 h2 {
   margin-bottom: 10px;
 }
 
+/* Estilos para parágrafos */
 p {
   margin: 10px 0;
 }
 
+/* Estilos para todos os campos de entrada de texto */
 input {
   box-sizing: border-box;
 }
 
+/* Estilos para a lista de tarefas */
 .todo-list {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #070707;
 }
 
+/* Estilos para cada item de tarefa */
 .todo {
   background-color: #dfece6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,11 +57,13 @@ input {
   align-items: center;
 }
 
+/* Estilos para a classe "category" dentro de .todo */
 .todo .category {
   font-size: 0.8em;
   color: #888;
 }
 
+/* Estilos para os botões */
 button {
   background-color: #081ddd;
   color: #fff;
@@ -66,20 +76,24 @@ button {
   transition: 0.3s;
 }
 
+/* Efeito de hover para botões */
 button:hover {
   opacity: 1;
 }
 
+/* Estilos para o botão de conclusão de tarefa */
 button.complete {
   background-color: #06eb06;
   color: #fff;
 }
 
+/* Estilos para o botão de remoção de tarefa */
 button.remove {
   background-color: red;
   color: #fff;
 }
 
+/* Estilos para campos de entrada de texto e seleção */
 input[type="text"],
 select {
   padding: 5px;
@@ -89,10 +103,12 @@ select {
   width: 100%;
 }
 
+/* Estilos para a seção de formulário de tarefa */
 .todo-form {
   padding-bottom: 1.5rem;
 }
 
+/* Estilos para as seções de filtro e pesquisa */
 .filter,
 .search {
   border-bottom: 1px solid #555;
@@ -100,12 +116,14 @@ select {
   padding-bottom: 1rem;
 }
 
+/* Estilos para as opções de filtro */
 .filter-options {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
 
+/* Estilos para as divs dentro de .filter-options */
 .filter-options div {
   flex: 1 1 0;
 }
