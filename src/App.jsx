@@ -1,12 +1,14 @@
 import { useState } from "react";
 
+// Importa componentes de outros arquivos
 import TodoForm from "./components/TodoForm";
 import Todo from "./components/Todo";
 import Search from "./components/Search";
 import Filter from "./components/Filter";
-import "./App.css";
+import "./App.css"; // Importa um arquivo CSS para estilos
 
 const App = () => {
+  // Estado para armazenar a lista de tarefas (inicialmente contém algumas tarefas)
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -28,16 +30,18 @@ const App = () => {
     },
   ]);
 
+  // Estados para filtragem, classificação e pesquisa de tarefas
   const [filter, setFilter] = useState("All");
   const [sort, setSort] = useState("Asc");
   const [search, setSearch] = useState("");
   const [value, setValue] = useState("");
 
+  // Função para adicionar uma nova tarefa à lista
   const addTodo = (text, category) => {
     const newTodos = [
       ...todos,
       {
-        id: Math.floor(Math.random() * 1000),
+        id: Math.floor(Math.random() * 1000), // Gera um ID único
         text,
         category,
         isCompleted: false,
@@ -46,6 +50,7 @@ const App = () => {
     setTodos(newTodos);
   };
 
+  // Função para remover uma tarefa da lista
   const removeTodo = (id) => {
     const newTodos = [...todos];
     const filteredTodos = newTodos.filter((todo) =>
@@ -54,6 +59,7 @@ const App = () => {
     setTodos(filteredTodos);
   };
 
+  // Função para marcar/desmarcar uma tarefa como concluída
   const completeTodo = (id) => {
     const newTodos = [...todos];
     newTodos.map((todo) =>
@@ -62,6 +68,7 @@ const App = () => {
     setTodos(newTodos);
   };
 
+  // Função para editar o texto de uma tarefa
   const editTodo = (id, newText) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, text: newText } : todo
@@ -73,9 +80,11 @@ const App = () => {
     <div className="app">
       <h1>Lista de Tarefas</h1>
       <div className="create-todo-section">
+        {/* Componente TodoForm para adicionar novas tarefas */}
         <TodoForm addTodo={addTodo} />
       </div>
       <div className="todo-list">
+        {/* Mapeia as tarefas para exibição */}
         {todos
           .filter((todo) =>
             filter === "All"
@@ -93,6 +102,7 @@ const App = () => {
               : b.text.localeCompare(a.text)
           )
           .map((todo, index) => (
+            // Componente Todo para exibir cada tarefa individualmente
             <Todo
               key={index}
               index={index}
@@ -104,7 +114,9 @@ const App = () => {
           ))}
       </div>
       <div className="search-filter-section">
+        {/* Componente Search para pesquisa de tarefas */}
         <Search search={search} setSearch={setSearch} />
+        {/* Componente Filter para filtrar e classificar tarefas */}
         <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       </div>
     </div>
