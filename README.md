@@ -16,32 +16,63 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-- [npm] (https://vitejs.dev/guide/)
+- [npm](https://vitejs.dev/guide/)
 
 ## Instalação
 
-Siga estas etapas para configurar o projeto localmente:
-
 1. Certifique-se de ter o Node.js instalado em seu sistema.
 
-2. Clone este repositório:
+**_Clone o projeto_**
 
-   ```bash
-   git clone https://github.com/https://github.com/DaniSodeiro/To-do-list
-   ```
+###### com HTTPS
 
-3. Navegue até a pasta do projeto:
+````bash
+git clone https://github.com/https://github.com/DaniSodeiro/To-do-list
 
+
+
+###### com SSH
+
+```bash
+git clone git@github.com:DaniSodeiro/To-do-list.git
+````
+
+###### **_Entre no diretório do projeto_**
+
+```bash
 cd to-do-list
+```
 
-4. Instale as dependências usando o seguinte comando:
+###### **_Instale as dependências_**
 
+```bash
 npm create vite@latest
+```
 
 5. Inicie o aplicativo:
 
+```bash
 npm run dev
+```
 
-6. O aplicativo estará disponível em `http://localhost:5173` no seu navegador.
+###### **_Inicie o servidor_**
+
+```bash
+`http://localhost:5173`
+
+//ou
+
+npm start
+
+```
+
+#### 🎉🎉🎉 É isso, aproveite o projeto.
 
 ## Referência
+
+- [NodeJS](https://nodejs.org/pt-br/download)
+- [npm](https://vitejs.dev/guide/)
+- [React](https://www.npmjs.com/package/react/v/18.2.0)
+- [React-dom](https://www.npmjs.com/package/react-dom/v/18.2.0)
+
+Feito por Daniela Sodeiro ♥️
