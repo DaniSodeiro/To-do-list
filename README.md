@@ -85,5 +85,6 @@ npm start
 - [npm](https://vitejs.dev/guide/)
 - [React](https://www.npmjs.com/package/react/v/18.2.0)
 - [React-dom](https://www.npmjs.com/package/react-dom/v/18.2.0)
+- [Styled-components](https://styled-components.com/docs/basics#installation)
 
 Feito por Daniela Sodeiro ♥️
