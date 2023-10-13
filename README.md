@@ -117,8 +117,6 @@ As tarefas adicionadas serão exibidas na lista com as seguintes opções:
 
 Você também pode filtrar as tarefas por status (Todas, Concluídas, Pendentes) e pesquisar tarefas por texto.
 
-![image](https://github.com/DaniSodeiro/To-do-list/assets/138523306/35014ad3-4a10-4c4a-9ba5-ca0a4cbdd682)
-
 Agora você está pronto para começar a gerenciar suas tarefas!
 
 ## Referência
