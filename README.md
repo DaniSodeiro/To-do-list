@@ -79,6 +79,42 @@ npm start
 - `App.jsx`: Componente principal que utiliza os componentes acima e gerencia o estado da lista de tarefas.
 - `Main.jsx`: Arquivo de ponto de entrada que renderiza o aplicativo no DOM.
 
+## Como Utilizar
+
+Neste aplicativo de lista de tarefas, você pode adicionar novas tarefas informando um título e uma categoria para cada uma delas.
+
+### Entrada
+
+#### Na parte "Criar tarefa"
+
+1. Digite um título para a tarefa.
+
+   - Exemplo: "Ir ao mercado"
+
+2. Escolha uma categoria para a tarefa.
+
+   - Exemplo: "Casa"
+
+3. Pressione a tecla [Enter] para adicionar a tarefa à lista.
+
+#### Exemplo:
+
+- **Tarefa 1:**
+  - Título: Ir ao mercado
+  - Categoria: Casa
+
+### Saída
+
+As tarefas adicionadas serão exibidas na lista com as seguintes opções:
+
+- [Editar]: Permite editar o título da tarefa.
+- [Concluir]: Marca a tarefa como concluída.
+- [Excluir]: Remove a tarefa da lista.
+
+Você também pode filtrar as tarefas por status (Todas, Concluídas, Pendentes) e pesquisar tarefas por texto.
+
+Agora você está pronto para começar a gerenciar suas tarefas!
+
 ## Referência
 
 - [NodeJS](https://nodejs.org/pt-br/download)
