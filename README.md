@@ -87,6 +87,7 @@ Neste aplicativo de lista de tarefas, você pode adicionar novas tarefas informa
 
 #### Na parte "Criar tarefa"
 
+```bash
 1. Digite um título para a tarefa.
 
    - Exemplo: "Ir ao mercado"
@@ -96,6 +97,7 @@ Neste aplicativo de lista de tarefas, você pode adicionar novas tarefas informa
    - Exemplo: "Casa"
 
 3. Pressione a tecla [Enter] para adicionar a tarefa à lista.
+```
 
 #### Exemplo:
 
@@ -110,6 +112,8 @@ As tarefas adicionadas serão exibidas na lista com as seguintes opções:
 - [Editar]: Permite editar o título da tarefa.
 - [Concluir]: Marca a tarefa como concluída.
 - [Excluir]: Remove a tarefa da lista.
+
+![image](https://github.com/DaniSodeiro/To-do-list/assets/138523306/35014ad3-4a10-4c4a-9ba5-ca0a4cbdd682)
 
 Você também pode filtrar as tarefas por status (Todas, Concluídas, Pendentes) e pesquisar tarefas por texto.
 
